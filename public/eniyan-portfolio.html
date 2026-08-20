@@ -1,0 +1,2962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eniyan S — Aeronautical Engineer</title>
+<meta name="description" content="Eniyan S — Aeronautical Engineer | Aerospace Manufacturing | Process Engineering | Industry 4.0">
+<style>
+:root{
+  --bg:#071018;--panel:#0c1721;--panel2:#101e2a;--text:#edf5f7;--muted:#9db0ba;
+  --line:#20323e;--accent:#62d6c5;--accent2:#7cb8ff;--max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:
+radial-gradient(circle at 80% 10%,rgba(98,214,197,.08),transparent 28%),
+linear-gradient(180deg,#071018,#08131b 45%,#061018);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(7,16,24,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.08em}.logo span{color:var(--accent)}
+.links{display:flex;gap:26px;color:var(--muted);font-size:14px}.links a:hover{color:var(--text)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 70px;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 85%);pointer-events:none}
+.hero-content{
+  position:relative;
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:45px;
+  align-items:center;
+  width:100%;
+  z-index:2;
+}/* =========================================================
+   HERO PROFILE — FULL BODY TRANSPARENT IMAGE
+   ========================================================= */
+
+.hero-profile{
+  position:relative;
+  height:560px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  z-index:3;
+}
+
+.profile-photo{
+  width:auto;
+  height:560px;
+  max-width:100%;
+  object-fit:contain;
+  object-position:center bottom;
+
+  position:relative;
+  z-index:4;
+
+  /* subtle embossed / raised effect */
+  filter:
+    drop-shadow(18px 22px 25px rgba(0,0,0,.45))
+    drop-shadow(0 0 18px rgba(98,214,197,.08));
+
+  transition:
+    transform .4s ease,
+    filter .4s ease;
+}
+
+.hero-profile:hover .profile-photo{
+  transform:translateY(-8px);
+
+  filter:
+    drop-shadow(22px 28px 30px rgba(0,0,0,.55))
+    drop-shadow(0 0 25px rgba(98,214,197,.12));
+}
+
+/* Hide the old frame */
+.profile-frame{
+  display:none;
+}
+
+.profile-data{
+  display:none;
+}
+.kicker{color:var(--accent);font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(48px,8vw,94px);line-height:.92;letter-spacing:-.055em;margin-bottom:24px}
+.hero h1 span{color:var(--accent)}
+.hero p{max-width:650px;color:var(--muted);font-size:19px}
+.buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:12px 18px;border:1px solid var(--line);border-radius:10px;font-weight:700;font-size:14px}
+.btn.primary{background:var(--accent);color:#061014;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+.orbit{height:380px;position:relative;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(16,30,42,.9),rgba(8,18,26,.7));display:grid;place-items:center;box-shadow:0 30px 100px rgba(0,0,0,.28)}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(98,214,197,.25);border-radius:50%;width:260px;height:130px;transform:rotate(-25deg)}
+.orbit:after{width:330px;height:170px;transform:rotate(25deg)}
+.orbit-core{width:95px;height:95px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--accent);box-shadow:0 0 45px rgba(98,214,197,.18);font-weight:900;letter-spacing:.12em}
+.orbit-label{position:absolute;bottom:25px;color:var(--muted);font-size:11px;letter-spacing:.15em;text-transform:uppercase}
+section{padding:100px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}
+.eyebrow{color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:800}
+h2{font-size:clamp(32px,5vw,52px);letter-spacing:-.04em;line-height:1.05;margin-top:8px}
+.intro{color:var(--muted);max-width:600px}
+.card{background:linear-gradient(145deg,rgba(16,30,42,.86),rgba(8,18,26,.85));border:1px solid var(--line);border-radius:18px;padding:28px}
+.experience{display:grid;gap:18px}
+.exp{display:grid;grid-template-columns:220px 1fr;gap:30px}
+.exp-logo{
+  margin-top:30px;
+  width:1250px;
+  height:120px;
+  display:flex;
+  align-items:center;
+}
+
+.exp-logo img{
+  width:auto;
+  height:auto;
+  max-width:250px;
+  max-height:100px;
+  object-fit:contain;
+}
+.date{color:var(--accent);font-size:13px;font-weight:700}.role{font-size:22px;font-weight:800}.company{color:var(--muted);margin:3px 0 14px}.desc{color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{min-height:260px;display:flex;flex-direction:column;justify-content:space-between}
+.project h3{font-size:25px;line-height:1.15;margin:12px 0}
+.project p{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.tag{font-size:11px;border:1px solid var(--line);padding:5px 9px;border-radius:999px;color:#b8c9d0}
+.featured{grid-column:1/-1;border-color:rgba(98,214,197,.35);background:linear-gradient(135deg,rgba(18,43,49,.85),rgba(9,19,28,.95))}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 13px;border:1px solid var(--line);border-radius:10px;color:#c9d6db;background:rgba(255,255,255,.02)}
+.achievements{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.achievement h3{font-size:18px;margin-bottom:8px}.achievement p{color:var(--muted);font-size:14px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact .card p{color:var(--muted);margin:8px 0 20px}
+footer{padding:35px 0 55px;color:#70828c;border-top:1px solid var(--line);font-size:13px}
+@media(max-width:850px){
+ .links{display:none}.hero-content,.contact{grid-template-columns:1fr}.orbit{height:280px}.projects{grid-template-columns:1fr}.featured{grid-column:auto}.achievements{grid-template-columns:1fr}.exp{grid-template-columns:1fr;gap:5px}
+ section{padding:75px 0}
+}
+</style>
+</head>
+<body>
+<nav><div class="container navin">
+  <div class="logo">ENIYAN<span>.</span></div>
+  <div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<!-- =========================================================
+     COMPLETE HERO SECTION — START REPLACEMENT
+     Replace your current HERO section with EVERYTHING below.
+     
+     Required images:
+       ./images/profile.png
+       ./images/tejas.png
+     ========================================================= -->
+
+<style>
+
+/* =========================================================
+   HERO BASE
+   ========================================================= */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:105px 0 55px;
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+
+/* =========================================================
+   TECHNICAL GRID BACKGROUND
+   ========================================================= */
+
+.hero .grid{
+  position:absolute;
+  inset:0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.035) 1px,
+      transparent 1px
+    );
+
+  background-size:48px 48px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black,
+      transparent 88%
+    );
+
+  pointer-events:none;
+  z-index:-5;
+}
+
+
+/* =========================================================
+   TEJAS AIRCRAFT — BACKGROUND
+   ========================================================= */
+
+.hero-aircraft{
+  position:absolute;
+
+  width:min(850px,68vw);
+
+  right:-170px;
+  top:19%;
+
+  opacity:.10;
+
+  filter:
+    grayscale(1)
+    brightness(1.55)
+    contrast(.72)
+    drop-shadow(
+      0 20px 35px rgba(0,0,0,.35)
+    );
+
+  pointer-events:none;
+
+  z-index:-2;
+
+  animation:
+    tejasFlight 18s ease-in-out infinite alternate;
+}
+
+
+/* =========================================================
+   TEJAS AIRCRAFT MOVEMENT
+   ========================================================= */
+
+@keyframes tejasFlight{
+
+  0%{
+    transform:
+      translateX(100px)
+      translateY(15px)
+      rotate(-1deg);
+  }
+
+  50%{
+    transform:
+      translateX(-25px)
+      translateY(-5px)
+      rotate(0deg);
+  }
+
+  100%{
+    transform:
+      translateX(-160px)
+      translateY(12px)
+      rotate(1deg);
+  }
+
+}
+
+
+/* =========================================================
+   FLIGHT PATH
+   ========================================================= */
+
+.flight-path{
+  position:absolute;
+
+  width:900px;
+  height:1px;
+
+  right:-210px;
+  top:60%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(98,214,197,.20),
+      transparent
+    );
+
+  transform:rotate(-7deg);
+
+  opacity:.45;
+
+  z-index:-1;
+}
+
+
+/* =========================================================
+   HERO MAIN LAYOUT
+   PHOTO LEFT / CONTENT RIGHT
+   ========================================================= */
+
+.hero-content{
+  position:relative;
+
+  display:grid;
+
+  grid-template-columns:
+    .88fr
+    1.12fr;
+
+  gap:45px;
+
+  align-items:center;
+
+  width:100%;
+
+  z-index:2;
+}
+
+
+/* =========================================================
+   LEFT — FULL BODY PROFILE
+   ========================================================= */
+
+.hero-profile{
+  position:relative;
+
+  height:570px;
+
+  display:flex;
+
+  align-items:flex-end;
+
+  justify-content:center;
+
+  z-index:3;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+   ========================================================= */
+
+.profile-photo{
+  display:block;
+
+  width:auto;
+
+  height:570px;
+
+  max-width:100%;
+
+  object-fit:contain;
+
+  object-position:center bottom;
+
+  position:relative;
+
+  z-index:4;
+
+  filter:
+    drop-shadow(
+      18px 24px 28px rgba(0,0,0,.50)
+    )
+    drop-shadow(
+      0 0 18px rgba(98,214,197,.07)
+    );
+
+  transition:
+    transform .4s ease,
+    filter .4s ease;
+}
+
+
+/* Slight lift on hover */
+
+.hero-profile:hover .profile-photo{
+  transform:
+    translateY(-8px);
+
+  filter:
+    drop-shadow(
+      22px 30px 35px rgba(0,0,0,.58)
+    )
+    drop-shadow(
+      0 0 25px rgba(98,214,197,.11)
+    );
+}
+
+
+/* Disable old profile elements */
+
+.hero-profile .profile-frame{
+  display:none;
+}
+
+.hero-profile .profile-data{
+  display:none;
+}
+
+
+/* =========================================================
+   RIGHT — INTRODUCTION
+   ========================================================= */
+
+.hero-copy{
+  position:relative;
+
+  z-index:5;
+}
+
+
+/* Small heading */
+
+.hero .kicker{
+  color:var(--accent);
+
+  font-size:13px;
+
+  letter-spacing:.18em;
+
+  text-transform:uppercase;
+
+  font-weight:700;
+
+  margin-bottom:18px;
+}
+
+
+/* Main heading */
+
+.hero h1{
+  font-size:
+    clamp(
+      48px,
+      7vw,
+      88px
+    );
+
+  line-height:.92;
+
+  letter-spacing:-.055em;
+
+  margin-bottom:24px;
+}
+
+
+/* Highlight */
+
+.hero h1 span{
+  color:var(--accent);
+}
+
+
+/* Description */
+
+.hero p{
+  max-width:650px;
+
+  color:var(--muted);
+
+  font-size:19px;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero .buttons{
+  display:flex;
+
+  gap:12px;
+
+  margin-top:30px;
+
+  flex-wrap:wrap;
+}
+
+.hero .btn{
+  padding:12px 18px;
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius:10px;
+
+  font-weight:700;
+
+  font-size:14px;
+
+  transition:
+    transform .25s ease,
+    background .25s ease;
+}
+
+.hero .btn.primary{
+  background:var(--accent);
+
+  color:#061014;
+
+  border-color:
+    var(--accent);
+}
+
+.hero .btn:hover{
+  transform:
+    translateY(-2px);
+}
+
+
+/* =========================================================
+   MOBILE VERSION
+   ========================================================= */
+
+@media(max-width:850px){
+
+  .hero{
+    min-height:auto;
+
+    padding:
+      105px
+      0
+      70px;
+  }
+
+
+  .hero-content{
+    grid-template-columns:1fr;
+
+    gap:5px;
+  }
+
+
+  /* Photo first */
+
+  .hero-profile{
+    height:420px;
+
+    order:1;
+  }
+
+
+  .profile-photo{
+    height:420px;
+
+    max-width:90%;
+  }
+
+
+  /* Text second */
+
+  .hero-copy{
+    order:2;
+
+    text-align:center;
+  }
+
+
+  .hero-copy p{
+    margin-left:auto;
+    margin-right:auto;
+
+    font-size:16px;
+  }
+
+
+  .hero .buttons{
+    justify-content:center;
+  }
+
+
+  /* Smaller aircraft on phone */
+
+  .hero-aircraft{
+    width:650px;
+
+    right:-330px;
+
+    top:23%;
+
+    opacity:.065;
+  }
+
+
+  .flight-path{
+    width:700px;
+
+    right:-300px;
+  }
+
+}
+
+</style>
+
+
+<!-- =========================================================
+     HERO HTML
+     ========================================================= -->
+
+<header class="hero">
+
+  <!-- Technical grid -->
+  <div class="grid"></div>
+
+
+  <!-- =======================================================
+       TEJAS AIRCRAFT
+       Your file: images/tejas.png
+       ======================================================= -->
+
+  <img
+    class="hero-aircraft"
+    src="./images/tejas.png"
+    alt=""
+    aria-hidden="true"
+  >
+
+
+  <!-- Aircraft flight path -->
+  <div class="flight-path"></div>
+
+
+  <!-- =======================================================
+       MAIN HERO CONTENT
+       ======================================================= -->
+
+  <div class="container hero-content">
+
+
+    <!-- =====================================================
+         LEFT SIDE — YOUR FULL BODY PHOTO
+         ===================================================== -->
+
+    <div class="hero-profile">
+
+      <img
+        class="profile-photo"
+        src="./images/profile.png"
+        alt="Eniyan S — Aeronautical Engineer"
+      >
+
+    </div>
+
+
+    <!-- =====================================================
+         RIGHT SIDE — YOUR INFORMATION
+         ===================================================== -->
+
+    <div class="hero-copy">
+
+
+      <div class="kicker">
+        Aeronautical Engineer · HITS Chennai
+      </div>
+
+
+      <h1>
+        Engineering<br>
+        <span>ideas</span> into impact.
+      </h1>
+
+
+      <p>
+        Final-year Aeronautical Engineering student focused on
+        aerospace manufacturing, process engineering, engineering
+        analysis and Industry 4.0 technologies.
+      </p>
+
+
+      <div class="buttons">
+
+
+        <a
+          class="btn primary"
+          href="#projects"
+        >
+          Explore Projects
+        </a>
+
+
+        <a
+          class="btn"
+          href="#experience"
+        >
+          View Experience
+        </a>
+
+
+        <a
+          class="btn"
+          href="resume.pdf"
+          download
+        >
+          Download Resume
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- =========================================================
+     COMPLETE HERO SECTION — END
+     ========================================================= -->
+
+<section id="about"><div class="container">
+<div class="section-head"><div><div class="eyebrow">01 · Profile</div><h2>Engineering with a<br>manufacturing mindset.</h2></div>
+<p class="intro">Hands-on industrial exposure across defence aerospace and steel manufacturing, with a strong interest in process optimization, automation and practical engineering solutions.</p></div>
+<div class="card"><p class="desc">My experience spans production coordination, ERP validation, shop-floor monitoring, quality requirements, composite manufacturing and engineering analysis. I enjoy turning real manufacturing problems into measurable technical solutions through structured problem-solving and emerging technologies.</p></div>
+</div></section>
+
+<section id="experience"><div class="container">
+<div class="section-head"><div><div class="eyebrow">02 · Experience</div><h2>Industrial exposure.</h2></div></div>
+<div class="experience">
+
+  <!-- =====================================================
+       L&T EXPERIENCE
+       ===================================================== -->
+
+  <div class="card exp">
+
+    <!-- LEFT COLUMN -->
+    <div>
+
+      <div class="date">
+        MAY — JUN 2026
+      </div>
+
+      <div class="exp-logo">
+        <img
+          src="./images/L&amp;T.png"
+          alt="Larsen & Toubro logo"
+        >
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT COLUMN -->
+    <div>
+
+      <div class="role">
+        Project Management Intern · PMG Aero
+      </div>
+
+      <div class="company">
+        Larsen & Toubro – Precision Engineering & Systems · Coimbatore
+      </div>
+
+      <p class="desc">
+        Supported LCA Tejas wing-component production through production
+        tracking, job-timeline monitoring, ERP validation, cost tracking
+        and shop-floor coordination. Collaborated with engineering,
+        production, composite manufacturing and quality teams. Developed
+        Resin Intelligence, an AI/NIR-based Industry 4.0 concept for
+        real-time process monitoring, process optimization and continuous
+        improvement.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       SAIL EXPERIENCE
+       ===================================================== -->
+
+  <div class="card exp">
+
+    <!-- LEFT COLUMN -->
+    <div>
+
+      <div class="date">
+        MAY — JUN 2025
+      </div>
+
+      <div class="exp-logo">
+        <img
+          src="./images/SAIL_Logo.png"
+          alt="Steel Authority of India Limited logo"
+        >
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT COLUMN -->
+    <div>
+
+      <div class="role">
+        Engineering Intern · Steel Manufacturing
+      </div>
+
+      <div class="company">
+        Steel Authority of India Limited · Salem
+      </div>
+
+      <p class="desc">
+        Gained hands-on exposure to stainless steel production through
+        hot rolling, cold rolling and heat-treatment operations.
+        Supported production and quality activities while observing
+        plant operations, manufacturing workflows and process
+        requirements, with exposure to industrial safety and process
+        improvement.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<section id="projects"><!-- =========================================================
+     03 · PROJECTS — SELECTED ENGINEERING WORK
+     COMPLETE PROJECT MEDIA REVAMP
+     ========================================================= -->
+
+<section id="projects">
+
+  <div class="container">
+
+    <!-- =======================================================
+         SECTION HEADER
+         ======================================================= -->
+
+    <div class="section-head">
+
+      <div>
+        <div class="eyebrow">
+          03 · Projects
+        </div>
+
+        <h2>
+          Selected engineering work.
+        </h2>
+      </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         PROJECT GRID
+         ======================================================= -->
+
+    <div class="projects">
+
+
+      <!-- =====================================================
+           FEATURED PROJECT — RESIN INTELLIGENCE
+           ===================================================== -->
+
+      <div class="card project featured">
+
+        <div>
+
+          <div class="eyebrow">
+            Featured · Industry 4.0
+          </div>
+
+          <h3>
+            Resin Intelligence — AI/NIR-Based Real-Time
+            Process Monitoring &amp; Optimization
+          </h3>
+
+          <p>
+            Developed an Industry 4.0 AI/NIR-based real-time resin
+            monitoring system for wet filament winding to replace
+            manual resin-content verification and improve manufacturing
+            consistency. Integrated NIR spectroscopy, Edge AI,
+            real-time data acquisition, process monitoring, AI/ML,
+            industrial automation and PLC-based control concepts to
+            monitor resin-to-fiber ratio and identify process
+            deviations. Proposed closed-loop control for corrective
+            process adjustments, focusing on process optimization,
+            process quality, operational effectiveness and continuous
+            improvement.
+          </p>
+
+
+          <!-- =================================================
+               LARGE FEATURED VIDEO
+               ================================================= -->
+
+          <div class="project-featured-media">
+
+            <button
+              class="project-media-trigger featured-video-trigger"
+              type="button"
+              onclick="openProjectMedia('video','./images/Reson.mp4','Resin Intelligence')"
+            >
+
+              <div class="project-video-shell">
+
+                <video
+                  class="project-featured-video"
+                  src="./images/Reson.mp4"
+                  preload="metadata"
+                  muted
+                  playsinline
+                ></video>
+
+                <div class="project-video-overlay">
+
+                  <div class="project-play-icon">
+                    ▶
+                  </div>
+
+                  <span>
+                    PLAY PROJECT VIDEO
+                  </span>
+
+                </div>
+
+              </div>
+
+            </button>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             FEATURED PROJECT TAGS
+             ================================================= -->
+
+        <div class="tags">
+
+          <span class="tag">NIR</span>
+
+          <span class="tag">Edge AI</span>
+
+          <span class="tag">Industry 4.0</span>
+
+          <span class="tag">PLC</span>
+
+          <span class="tag">Process Optimization</span>
+
+          <span class="tag">IIoT</span>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =====================================================
+           CFD PROJECT
+           ===================================================== -->
+
+      <div class="card project">
+
+        <div>
+
+          <div class="eyebrow">
+            CFD · Aerodynamics
+          </div>
+
+          <h3>
+            Slotted Ducted Decelerator
+          </h3>
+
+          <p>
+            Evaluated the aerodynamic performance and drag
+            characteristics of a slotted ducted decelerator for
+            re-entry applications using CFD simulations and
+            experimental validation.
+          </p>
+
+        </div>
+
+        <div class="tags">
+
+          <span class="tag">
+            CFD
+          </span>
+
+          <span class="tag">
+            ANSYS
+          </span>
+
+          <span class="tag">
+            Experimental Validation
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =====================================================
+           RC AIRCRAFT PROJECT
+           ===================================================== -->
+
+      <div class="card project rc-project">
+
+        <div>
+
+          <div class="eyebrow">
+            Design · Fabrication
+          </div>
+
+          <h3>
+            RC Aircraft Design &amp; Fabrication
+          </h3>
+
+          <p>
+            Designed, fabricated and tested an RC aircraft, applying
+            aerodynamic design, fabrication and practical testing.
+          </p>
+
+
+          <!-- ===============================================
+               RC MEDIA — SMALL IMAGE + SMALL VIDEO
+               =============================================== -->
+
+          <div class="rc-media-grid">
+
+
+            <!-- RC IMAGE -->
+
+            <button
+              class="rc-media-card"
+              type="button"
+              onclick="openProjectMedia('image','./images/RC.jpg','RC Aircraft Design & Fabrication')"
+            >
+
+              <img
+                src="./images/RC.jpg"
+                alt="RC Aircraft Design and Fabrication"
+              >
+
+              <div class="rc-media-label">
+
+                <span class="rc-media-icon">
+                  ↗
+                </span>
+
+                <span>
+                  VIEW AIRCRAFT
+                </span>
+
+              </div>
+
+            </button>
+
+
+
+            <!-- RC VIDEO -->
+
+            <button
+              class="rc-media-card rc-video-card"
+              type="button"
+              onclick="openProjectMedia('video','./images/RC.mp4','RC Aircraft Design & Fabrication')"
+            >
+
+              <video
+                src="./images/RC.mp4"
+                preload="metadata"
+                muted
+                playsinline
+              ></video>
+
+              <div class="rc-media-label">
+
+                <span class="rc-media-icon">
+                  ▶
+                </span>
+
+                <span>
+                  PLAY VIDEO
+                </span>
+
+              </div>
+
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- RC TAGS -->
+
+        <div class="tags">
+
+          <span class="tag">
+            Aerodynamics
+          </span>
+
+          <span class="tag">
+            Design
+          </span>
+
+          <span class="tag">
+            Fabrication
+          </span>
+
+          <span class="tag">
+            Testing
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =====================================================
+           ENERGY HARVESTING PROJECT
+           ===================================================== -->
+
+      <div class="card project">
+
+        <div>
+
+          <div class="eyebrow">
+            Innovation · Sustainability
+          </div>
+
+          <h3>
+            Piezoelectric Energy-Harvesting Shoes
+          </h3>
+
+          <p>
+            Developed and presented a practical energy-harvesting
+            concept, applying engineering design and analytical
+            problem-solving with a focus on sustainability,
+            innovation and user needs.
+          </p>
+
+        </div>
+
+        <div class="tags">
+
+          <span class="tag">
+            Energy Harvesting
+          </span>
+
+          <span class="tag">
+            Sustainability
+          </span>
+
+          <span class="tag">
+            Innovation
+          </span>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECT MEDIA MODAL
+     ========================================================= -->
+
+<div
+  class="project-media-modal"
+  id="projectMediaModal"
+  aria-hidden="true"
+>
+
+  <div class="project-modal-box">
+
+
+    <!-- CLOSE -->
+
+    <button
+      class="project-modal-close"
+      type="button"
+      onclick="closeProjectMedia()"
+      aria-label="Close media"
+    >
+      ×
+    </button>
+
+
+    <!-- TITLE -->
+
+    <div
+      class="project-modal-title"
+      id="projectModalTitle"
+    >
+      Project Media
+    </div>
+
+
+    <!-- =====================================================
+         MEDIA AREA
+         ===================================================== -->
+
+    <div class="project-modal-media-area">
+
+
+      <!-- IMAGE -->
+
+      <img
+        id="projectModalImage"
+        class="project-modal-image"
+        src=""
+        alt=""
+      >
+
+
+      <!-- VIDEO -->
+
+      <video
+        id="projectModalVideo"
+        class="project-modal-video"
+        controls
+        playsinline
+        preload="metadata"
+      ></video>
+
+    </div>
+
+
+    <!-- =====================================================
+         CUSTOM VIDEO CONTROLS
+         ===================================================== -->
+
+    <div
+      class="project-video-controls"
+      id="projectVideoControls"
+    >
+
+      <button
+        type="button"
+        onclick="projectSeek(-10)"
+      >
+        ↶ 10s
+      </button>
+
+
+      <button
+        type="button"
+        onclick="projectTogglePlay()"
+      >
+        <span id="projectPlayButtonText">
+          ▶ Play
+        </span>
+      </button>
+
+
+      <button
+        type="button"
+        onclick="projectSeek(10)"
+      >
+        10s ↷
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     PROJECT SECTION STYLES
+     ========================================================= -->
+
+<style>
+
+/* =========================================================
+   FEATURED PROJECT MEDIA
+   ========================================================= */
+
+.project-featured-media{
+
+  margin-top:28px;
+
+}
+
+
+.project-media-trigger{
+
+  width:100%;
+
+  display:block;
+
+  padding:0;
+
+  margin:0;
+
+  border:0;
+
+  background:none;
+
+  cursor:pointer;
+
+  text-align:left;
+
+}
+
+
+.project-video-shell{
+
+  position:relative;
+
+  width:100%;
+
+  min-height:360px;
+
+  overflow:hidden;
+
+  border-radius:16px;
+
+  border:
+    1px solid
+    rgba(98,214,197,.22);
+
+  background:#050b10;
+
+}
+
+
+.project-featured-video{
+
+  display:block;
+
+  width:100%;
+
+  height:360px;
+
+  object-fit:cover;
+
+  opacity:.88;
+
+  transition:
+    transform .45s ease,
+    opacity .35s ease;
+
+}
+
+
+.project-video-overlay{
+
+  position:absolute;
+
+  inset:0;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:12px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5,11,16,.12),
+      rgba(5,11,16,.50)
+    );
+
+  color:var(--text);
+
+  transition:
+    background .3s ease;
+
+}
+
+
+.project-media-trigger:hover
+.project-featured-video{
+
+  transform:scale(1.025);
+
+  opacity:1;
+
+}
+
+
+.project-media-trigger:hover
+.project-video-overlay{
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5,11,16,.20),
+      rgba(5,11,16,.68)
+    );
+
+}
+
+
+.project-play-icon{
+
+  width:64px;
+
+  height:64px;
+
+  border-radius:50%;
+
+  display:grid;
+
+  place-items:center;
+
+  padding-left:4px;
+
+  background:
+    var(--accent);
+
+  color:#061014;
+
+  font-size:22px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(0,0,0,.35);
+
+}
+
+
+.project-video-overlay span{
+
+  font-size:10px;
+
+  font-weight:800;
+
+  letter-spacing:.15em;
+
+  color:#dbe8eb;
+
+}
+
+
+/* =========================================================
+   RC AIRCRAFT MEDIA
+   ========================================================= */
+
+.rc-media-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:12px;
+
+  margin-top:22px;
+
+}
+
+
+.rc-media-card{
+
+  position:relative;
+
+  height:150px;
+
+  min-width:0;
+
+  padding:0;
+
+  overflow:hidden;
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius:14px;
+
+  background:
+    #071018;
+
+  cursor:pointer;
+
+}
+
+
+.rc-media-card img,
+.rc-media-card video{
+
+  width:100%;
+
+  height:100%;
+
+  display:block;
+
+  object-fit:cover;
+
+  opacity:.78;
+
+  transition:
+    transform .4s ease,
+    opacity .3s ease;
+
+}
+
+
+.rc-media-card:hover img,
+.rc-media-card:hover video{
+
+  transform:scale(1.05);
+
+  opacity:.96;
+
+}
+
+
+.rc-media-label{
+
+  position:absolute;
+
+  left:0;
+
+  right:0;
+
+  bottom:0;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  padding:10px 12px;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(5,11,16,.88)
+    );
+
+  color:#edf5f7;
+
+  font-size:9px;
+
+  font-weight:800;
+
+  letter-spacing:.12em;
+
+  text-align:left;
+
+}
+
+
+.rc-media-icon{
+
+  width:24px;
+
+  height:24px;
+
+  flex:0 0 24px;
+
+  border-radius:50%;
+
+  display:grid;
+
+  place-items:center;
+
+  background:
+    var(--accent);
+
+  color:#061014;
+
+  font-size:10px;
+
+}
+
+
+/* =========================================================
+   PROJECT MEDIA MODAL
+   ========================================================= */
+
+.project-media-modal{
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:10000;
+
+  display:none;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:30px;
+
+  background:
+    rgba(2,7,11,.90);
+
+  backdrop-filter:
+    blur(12px);
+
+}
+
+
+.project-media-modal.active{
+
+  display:flex;
+
+}
+
+
+.project-modal-box{
+
+  position:relative;
+
+  width:min(
+    1100px,
+    94vw
+  );
+
+  max-height:92vh;
+
+  padding:
+    24px;
+
+  border:
+    1px solid
+    rgba(98,214,197,.22);
+
+  border-radius:20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16,30,42,.98),
+      rgba(6,14,21,.98)
+    );
+
+  box-shadow:
+    0 40px 120px
+    rgba(0,0,0,.58);
+
+}
+
+
+.project-modal-title{
+
+  color:var(--text);
+
+  font-size:15px;
+
+  font-weight:800;
+
+  letter-spacing:.03em;
+
+  margin-bottom:16px;
+
+}
+
+
+.project-modal-media-area{
+
+  width:100%;
+
+  max-height:72vh;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  overflow:hidden;
+
+  border-radius:14px;
+
+  background:#020609;
+
+}
+
+
+.project-modal-image{
+
+  display:none;
+
+  max-width:100%;
+
+  max-height:70vh;
+
+  width:auto;
+
+  height:auto;
+
+  object-fit:contain;
+
+}
+
+
+.project-modal-video{
+
+  display:none;
+
+  width:100%;
+
+  max-height:70vh;
+
+  background:#000;
+
+}
+
+
+.project-video-controls{
+
+  display:none;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:10px;
+
+  margin-top:14px;
+
+}
+
+
+.project-video-controls.active{
+
+  display:flex;
+
+}
+
+
+.project-video-controls button{
+
+  border:
+    1px solid
+    var(--line);
+
+  background:
+    rgba(255,255,255,.04);
+
+  color:
+    var(--text);
+
+  padding:
+    9px
+    14px;
+
+  border-radius:9px;
+
+  font-size:12px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:
+    .2s ease;
+
+}
+
+
+.project-video-controls button:hover{
+
+  background:
+    var(--accent);
+
+  border-color:
+    var(--accent);
+
+  color:#061014;
+
+}
+
+
+.project-modal-close{
+
+  position:absolute;
+
+  top:-14px;
+
+  right:-14px;
+
+  width:40px;
+
+  height:40px;
+
+  border:0;
+
+  border-radius:50%;
+
+  background:#edf5f7;
+
+  color:#061014;
+
+  font-size:24px;
+
+  line-height:1;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  z-index:5;
+
+  box-shadow:
+    0 8px 25px
+    rgba(0,0,0,.35);
+
+}
+
+
+.project-modal-close:hover{
+
+  transform:
+    scale(1.06);
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:850px){
+
+  .project-video-shell{
+
+    min-height:240px;
+
+  }
+
+
+  .project-featured-video{
+
+    height:240px;
+
+  }
+
+
+  .rc-media-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .rc-media-card{
+
+    height:180px;
+
+  }
+
+
+  .project-media-modal{
+
+    padding:15px;
+
+  }
+
+
+  .project-modal-box{
+
+    width:96vw;
+
+    padding:16px;
+
+  }
+
+
+  .project-modal-media-area{
+
+    max-height:70vh;
+
+  }
+
+
+  .project-video-controls{
+
+    flex-wrap:wrap;
+
+  }
+
+}
+
+</style>
+
+
+
+<!-- =========================================================
+     PROJECT MEDIA JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+/* =========================================================
+   PROJECT MEDIA ELEMENTS
+   ========================================================= */
+
+const projectMediaModal =
+  document.getElementById(
+    "projectMediaModal"
+  );
+
+const projectModalImage =
+  document.getElementById(
+    "projectModalImage"
+  );
+
+const projectModalVideo =
+  document.getElementById(
+    "projectModalVideo"
+  );
+
+const projectModalTitle =
+  document.getElementById(
+    "projectModalTitle"
+  );
+
+const projectVideoControls =
+  document.getElementById(
+    "projectVideoControls"
+  );
+
+const projectPlayButtonText =
+  document.getElementById(
+    "projectPlayButtonText"
+  );
+
+
+/* =========================================================
+   OPEN MEDIA
+   ========================================================= */
+
+function openProjectMedia(
+  type,
+  source,
+  title
+){
+
+  projectMediaModal.classList.add(
+    "active"
+  );
+
+  projectMediaModal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+  projectModalTitle.textContent =
+    title;
+
+
+  /* Reset */
+
+  projectModalImage.style.display =
+    "none";
+
+  projectModalVideo.style.display =
+    "none";
+
+  projectVideoControls.classList.remove(
+    "active"
+  );
+
+
+  /* IMAGE */
+
+  if(type === "image"){
+
+    projectModalVideo.pause();
+
+    projectModalVideo.removeAttribute(
+      "src"
+    );
+
+    projectModalVideo.load();
+
+    projectModalImage.src =
+      source;
+
+    projectModalImage.alt =
+      title;
+
+    projectModalImage.style.display =
+      "block";
+
+    return;
+  }
+
+
+  /* VIDEO */
+
+  if(type === "video"){
+
+    projectModalImage.src =
+      "";
+
+    projectModalVideo.src =
+      source;
+
+    projectModalVideo.style.display =
+      "block";
+
+    projectVideoControls.classList.add(
+      "active"
+    );
+
+    projectModalVideo.load();
+
+    projectModalVideo.play()
+      .catch(() => {});
+
+    updateProjectPlayButton();
+
+  }
+
+}
+
+
+/* =========================================================
+   CLOSE MEDIA
+   ========================================================= */
+
+function closeProjectMedia(){
+
+  projectModalVideo.pause();
+
+  projectModalVideo.removeAttribute(
+    "src"
+  );
+
+  projectModalVideo.load();
+
+  projectModalImage.src =
+    "";
+
+  projectModalImage.style.display =
+    "none";
+
+  projectModalVideo.style.display =
+    "none";
+
+  projectVideoControls.classList.remove(
+    "active"
+  );
+
+  projectMediaModal.classList.remove(
+    "active"
+  );
+
+  projectMediaModal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+}
+
+
+/* =========================================================
+   PLAY / PAUSE
+   ========================================================= */
+
+function projectTogglePlay(){
+
+  if(projectModalVideo.paused){
+
+    projectModalVideo.play();
+
+  }else{
+
+    projectModalVideo.pause();
+
+  }
+
+}
+
+
+/* =========================================================
+   UPDATE PLAY BUTTON
+   ========================================================= */
+
+function updateProjectPlayButton(){
+
+  if(projectModalVideo.paused){
+
+    projectPlayButtonText.textContent =
+      "▶ Play";
+
+  }else{
+
+    projectPlayButtonText.textContent =
+      "❚❚ Pause";
+
+  }
+
+}
+
+
+/* =========================================================
+   SEEK BACK / FORWARD
+   ========================================================= */
+
+function projectSeek(seconds){
+
+  projectModalVideo.currentTime =
+    Math.max(
+      0,
+      Math.min(
+        projectModalVideo.duration || Infinity,
+        projectModalVideo.currentTime + seconds
+      )
+    );
+
+}
+
+
+/* =========================================================
+   VIDEO EVENTS
+   ========================================================= */
+
+projectModalVideo.addEventListener(
+  "play",
+  updateProjectPlayButton
+);
+
+projectModalVideo.addEventListener(
+  "pause",
+  updateProjectPlayButton
+);
+
+projectModalVideo.addEventListener(
+  "ended",
+  updateProjectPlayButton
+);
+
+
+/* =========================================================
+   CLICK OUTSIDE MODAL = CLOSE
+   ========================================================= */
+
+projectMediaModal.addEventListener(
+  "click",
+  function(event){
+
+    if(
+      event.target ===
+      projectMediaModal
+    ){
+
+      closeProjectMedia();
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   ESC KEY = CLOSE
+   ========================================================= */
+
+document.addEventListener(
+  "keydown",
+  function(event){
+
+    if(
+      event.key === "Escape" &&
+      projectMediaModal.classList.contains(
+        "active"
+      )
+    ){
+
+      closeProjectMedia();
+
+    }
+
+  }
+);
+
+</script></section>
+
+<section id="skills"><!-- =========================================================
+     04 · SKILLS — TECHNICAL TOOLKIT
+     CATEGORIZED SKILLS + TOOLKIT IMAGE
+     ========================================================= -->
+
+<section id="skills">
+
+  <div class="container">
+
+    <!-- Section heading -->
+    <div class="section-head">
+
+      <div>
+
+        <div class="eyebrow">
+          04 · Skills
+        </div>
+
+        <h2>
+          Technical toolkit.
+        </h2>
+
+      </div>
+
+      <p class="intro">
+        A structured mix of engineering, manufacturing,
+        industrial technology and engineering analysis tools.
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOOLKIT LAYOUT
+         LEFT  = CATEGORIZED SKILLS
+         RIGHT = IMAGE
+         ===================================================== -->
+
+    <div class="toolkit-layout">
+
+
+      <!-- ===================================================
+           LEFT — SKILL CATEGORIES
+           =================================================== -->
+
+      <div class="toolkit-skills">
+
+
+        <!-- ENGINEERING & OPERATIONS -->
+        <div class="toolkit-category card">
+
+          <div class="toolkit-category-title">
+            Engineering &amp; Operations
+          </div>
+
+          <div class="toolkit-list">
+
+            <div class="toolkit-item">
+              Process Engineering
+              <span>&amp; Continuous Improvement</span>
+            </div>
+
+            <div class="toolkit-item">
+              Manufacturing
+              <span>&amp; Production Optimization</span>
+            </div>
+
+            <div class="toolkit-item">
+              Engineering Problem Solving
+              <span>&amp; Analysis</span>
+            </div>
+
+            <div class="toolkit-item">
+              Quality Control
+              <span>&amp; Process Monitoring</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- INDUSTRIAL TECHNOLOGY -->
+        <div class="toolkit-category card">
+
+          <div class="toolkit-category-title">
+            Industrial Technology
+          </div>
+
+          <div class="toolkit-list">
+
+            <div class="toolkit-item">
+              Industry 4.0,
+              <span>Edge AI, Digital Twin &amp; IIoT</span>
+            </div>
+
+            <div class="toolkit-item">
+              PLC / DCS
+              <span>&amp; Industrial Automation</span>
+            </div>
+
+            <div class="toolkit-item">
+              ERP
+              <span>&amp; Digital Manufacturing</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ENGINEERING TOOLS -->
+        <div class="toolkit-category card">
+
+          <div class="toolkit-category-title">
+            Engineering Tools
+          </div>
+
+          <div class="toolkit-list">
+
+            <div class="toolkit-item">
+              ANSYS
+            </div>
+
+            <div class="toolkit-item">
+              SOLIDWORKS
+            </div>
+
+            <div class="toolkit-item">
+              MATLAB
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <!-- ===================================================
+           RIGHT — TOOLKIT IMAGE
+           =================================================== -->
+
+      <div class="toolkit-visual">
+
+        <div class="toolkit-image-wrap">
+
+          <img
+            src="./images/toolkit.jpg"
+            alt="Engineering toolkit"
+            class="toolkit-image"
+          >
+
+          <div class="toolkit-image-label">
+            ENGINEERING / TOOLKIT
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     TECHNICAL TOOLKIT STYLES
+     ========================================================= -->
+
+<style>
+
+/* =========================================================
+   MAIN TOOLKIT LAYOUT
+   ========================================================= */
+
+.toolkit-layout{
+
+  display:grid;
+
+  grid-template-columns:
+    1.15fr
+    .85fr;
+
+  gap:24px;
+
+  align-items:stretch;
+
+}
+
+
+/* =========================================================
+   LEFT — CATEGORIES
+   ========================================================= */
+
+.toolkit-skills{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:18px;
+
+}
+
+
+/* =========================================================
+   CATEGORY CARD
+   ========================================================= */
+
+.toolkit-category{
+
+  padding:24px 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16,30,42,.90),
+      rgba(8,18,26,.88)
+    );
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius:18px;
+
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    background .25s ease;
+
+}
+
+
+.toolkit-category:hover{
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(98,214,197,.32);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(18,37,48,.94),
+      rgba(8,18,26,.92)
+    );
+
+}
+
+
+/* =========================================================
+   CATEGORY TITLE
+   ========================================================= */
+
+.toolkit-category-title{
+
+  color:var(--accent);
+
+  font-size:15px;
+
+  font-weight:800;
+
+  letter-spacing:.03em;
+
+  margin-bottom:13px;
+
+}
+
+
+/* =========================================================
+   SKILL LIST
+   ========================================================= */
+
+.toolkit-list{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:9px;
+
+}
+
+
+/* =========================================================
+   SKILL ITEM
+   ========================================================= */
+
+.toolkit-item{
+
+  position:relative;
+
+  padding-left:17px;
+
+  color:
+    var(--text);
+
+  font-size:15px;
+
+  line-height:1.45;
+
+}
+
+
+.toolkit-item::before{
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+
+  top:.62em;
+
+  width:5px;
+
+  height:5px;
+
+  border-radius:50%;
+
+  background:
+    var(--accent);
+
+}
+
+
+.toolkit-item span{
+
+  color:
+    var(--muted);
+
+}
+
+
+/* =========================================================
+   RIGHT — IMAGE
+   ========================================================= */
+
+.toolkit-visual{
+
+  position:relative;
+
+  min-height:100%;
+
+}
+
+
+.toolkit-image-wrap{
+
+  position:relative;
+
+  height:100%;
+
+  min-height:510px;
+
+  overflow:hidden;
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius:20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16,30,42,.90),
+      rgba(8,18,26,.95)
+    );
+
+  box-shadow:
+    0 25px 70px
+    rgba(0,0,0,.28);
+
+}
+
+
+/* =========================================================
+   TOOLKIT IMAGE
+   ========================================================= */
+
+.toolkit-image{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+
+  opacity:.88;
+
+  filter:
+    saturate(.82)
+    contrast(1.04);
+
+  transition:
+    transform .5s ease,
+    opacity .5s ease,
+    filter .5s ease;
+
+}
+
+
+.toolkit-image-wrap:hover
+.toolkit-image{
+
+  transform:
+    scale(1.035);
+
+  opacity:.96;
+
+  filter:
+    saturate(.95)
+    contrast(1.05);
+
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.toolkit-image-wrap::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7,16,24,.78),
+      transparent 48%
+    );
+
+  pointer-events:none;
+
+}
+
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.toolkit-image-label{
+
+  position:absolute;
+
+  left:22px;
+
+  bottom:20px;
+
+  z-index:2;
+
+  padding:
+    8px
+    12px;
+
+  border-left:
+    2px solid
+    var(--accent);
+
+  background:
+    rgba(7,16,24,.68);
+
+  backdrop-filter:
+    blur(10px);
+
+  color:
+    var(--text);
+
+  font-size:10px;
+
+  font-weight:800;
+
+  letter-spacing:.16em;
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:850px){
+
+  .toolkit-layout{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+  }
+
+
+  .toolkit-image-wrap{
+
+    min-height:360px;
+
+  }
+
+
+  .toolkit-category{
+
+    padding:
+      21px
+      22px;
+
+  }
+
+
+  .toolkit-item{
+
+    font-size:14px;
+
+  }
+
+}
+
+</style>
+</div></section>
+<style>
+.achievement-scroll {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 5px 20px;
+  scrollbar-width: thin;
+}
+
+.achievement-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.achievement-scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--accent);
+}
+
+.achievement-card {
+  flex: 0 0 360px;
+  min-width: 360px;
+}
+
+.achievement-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  background: rgba(255,255,255,0.03);
+}
+
+.achievement-card img:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+/* Full-screen image viewer */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.image-modal.active {
+  display: flex;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.image-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: #111;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.image-close:hover {
+  transform: scale(1.08);
+}
+</style>
+<section id="achievements">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">05 · Recognition</div>
+        <h2>Built, presented, recognized.</h2>
+      </div>
+    </div>
+
+<div class="achievement-scroll" id="achievementSlider">
+
+  <!-- L&T -->
+  <div class="card achievement-card">
+    <h3>L&T Defence Aerospace</h3>
+
+    <p>
+      Letter of Appreciation from the Head – Programme Management,
+      Aeronautics for developing Resin Intelligence during the internship.
+    </p>
+
+    <img src="images/1.jpeg"
+         alt="L&T Letter of Appreciation"
+         onclick="openAchievementImage(this.src)">
+  </div>
+
+
+  <!-- Shark Tank -->
+  <div class="card achievement-card">
+    <h3>Runner-Up · Shark Tank</h3>
+
+    <p>
+      Recognized for business innovation, problem-solving, communication
+      and technical presentation through an innovative solution.
+    </p>
+
+    <img src="images/2.jpeg"
+         alt="Shark Tank Runner-Up"
+         onclick="openAchievementImage(this.src)">
+  </div>
+
+
+  <!-- Science Expo -->
+  <div class="card achievement-card">
+    <h3>Runner-Up · Science Expo</h3>
+
+    <p>
+      Recognized for developing and presenting Piezoelectric Energy-Harvesting
+      Shoes, applying engineering design and analytical problem-solving with
+      a focus on sustainability and user needs.
+    </p>
+
+    <img src="images/3.jpeg"
+         alt="Piezoelectric Energy-Harvesting Shoes"
+         onclick="openAchievementImage(this.src)">
+  </div>
+
+</div>
+
+
+<!-- Image popup -->
+<div class="image-modal" id="achievementModal">
+
+  <button class="image-close"
+          onclick="closeAchievementImage()">
+    ×
+  </button>
+
+  <img id="achievementModalImage" src="" alt="Achievement">
+
+</div>
+
+
+<script>
+function openAchievementImage(imageSrc) {
+  document.getElementById("achievementModalImage").src = imageSrc;
+  document.getElementById("achievementModal").classList.add("active");
+}
+
+function closeAchievementImage() {
+  document.getElementById("achievementModal").classList.remove("active");
+  document.getElementById("achievementModalImage").src = "";
+}
+
+
+/* Close when clicking outside the image */
+document.getElementById("achievementModal").addEventListener("click", function(event) {
+  if (event.target === this) {
+    closeAchievementImage();
+  }
+});
+
+
+/* Auto-scroll */
+const achievementSlider = document.getElementById("achievementSlider");
+
+let autoScroll = setInterval(() => {
+
+  if (achievementSlider.scrollLeft + achievementSlider.clientWidth >= achievementSlider.scrollWidth - 5) {
+    achievementSlider.scrollTo({
+      left: 0,
+      behavior: "smooth"
+    });
+  } else {
+    achievementSlider.scrollBy({
+      left: 380,
+      behavior: "smooth"
+    });
+  }
+
+}, 3500);
+
+
+/* Pause auto-scroll when mouse is over the achievements */
+achievementSlider.addEventListener("mouseenter", () => {
+  clearInterval(autoScroll);
+});
+
+achievementSlider.addEventListener("mouseleave", () => {
+
+  autoScroll = setInterval(() => {
+
+    if (achievementSlider.scrollLeft + achievementSlider.clientWidth >= achievementSlider.scrollWidth - 5) {
+      achievementSlider.scrollTo({
+        left: 0,
+        behavior: "smooth"
+      });
+    } else {
+      achievementSlider.scrollBy({
+        left: 380,
+        behavior: "smooth"
+      });
+    }
+
+  }, 3500);
+
+});
+</script>
+
+<section id="contact"><div class="container">
+<div class="section-head"><div><div class="eyebrow">06 · Contact</div><h2>Let's build something<br>useful.</h2></div></div>
+<div class="contact">
+<p>Open to engineering, manufacturing, process improvement and technology-driven opportunities.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+  <a class="btn primary" href="mailto:eniyansk7@gmail.com">
+    ✉ eniyansk7@gmail.com
+  </a>
+
+  <a class="btn" href="https://www.linkedin.com/in/eniyan-sk/" target="_blank"
+     style="background:#0A66C2;border-color:#0A66C2;color:white;">
+    in · Eniyan S
+  </a>
+
+  <a class="btn" href="tel:+916383762232">
+    ☎ +91 6383762232
+  </a>
+</div>
+</html>
