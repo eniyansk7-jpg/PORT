@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+*.log
+pythagora-core/
+IMAGES/reson.mp4
+IMAGES/RC.mp4
