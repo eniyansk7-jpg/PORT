@@ -684,12 +684,20 @@ footer{padding:35px 0 55px;color:#70828c;border-top:1px solid var(--line);font-s
 
 
         <a
-          class="btn"
-          href="resume.pdf"
-          download
-        >
-          Download Resume
-        </a>
+  class="btn"
+  href="javascript:void(0)"
+  onclick="openResumePreview()"
+>
+  Preview Resume
+</a>
+
+<a
+  class="btn"
+  href="resume.pdf"
+  download
+>
+  Download Resume
+</a>
 
 
       </div>
@@ -3214,5 +3222,6 @@ document.addEventListener("keydown", function(event) {
 
 
 </html>
+
 
 
