@@ -683,12 +683,21 @@ footer{padding:35px 0 55px;color:#70828c;border-top:1px solid var(--line);font-s
         </a>
 
 
-        <a
-          class="btn"
-          href="resume.pdf"
-          download
-        >
-          Download Resume
+       <a
+  class="btn"
+  href="javascript:void(0)"
+  onclick="openResumePreview()"
+>
+  Preview Resume
+</a>
+
+<a
+  class="btn"
+  href="resume.pdf"
+  download
+>
+  Download Resume
+</a>
         </a>
 
 
@@ -2959,4 +2968,257 @@ achievementSlider.addEventListener("mouseleave", () => {
     ☎ +91 6383762232
   </a>
 </div>
+<!-- RESUME PREVIEW MODAL -->
+
+<div id="resumePreviewModal" class="resume-preview-modal">
+
+  <div class="resume-preview-box">
+
+    <div class="resume-preview-header">
+
+      <div>
+        <div class="resume-preview-label">
+          DOCUMENT PREVIEW
+        </div>
+
+        <div class="resume-preview-title">
+          Eniyan S — Resume
+        </div>
+      </div>
+
+      <button
+        class="resume-preview-close"
+        type="button"
+        onclick="closeResumePreview()"
+      >
+        ×
+      </button>
+
+    </div>
+
+    <div class="resume-preview-content">
+      <iframe
+        src="resume.pdf"
+        title="Eniyan S Resume"
+      ></iframe>
+    </div>
+
+    <div class="resume-preview-footer">
+
+      <a
+        class="resume-download-button"
+        href="resume.pdf"
+        download
+      >
+        ↓ Download Resume
+      </a>
+
+      <button
+        class="resume-close-button"
+        type="button"
+        onclick="closeResumePreview()"
+      >
+        Close
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<style>
+
+.resume-preview-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(2, 7, 12, 0.92);
+  backdrop-filter: blur(14px);
+}
+
+.resume-preview-modal.active {
+  display: flex;
+}
+
+.resume-preview-box {
+  width: min(1050px, 96vw);
+  height: min(900px, 94vh);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #071018;
+
+  border: 1px solid rgba(98, 214, 197, 0.28);
+  border-radius: 18px;
+
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.7);
+}
+
+.resume-preview-header {
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 20px 16px 24px;
+
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.resume-preview-label {
+  color: #62d6c5;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: .22em;
+}
+
+.resume-preview-title {
+  margin-top: 5px;
+  color: #f1f5f7;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.resume-preview-close {
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 50%;
+
+  background: rgba(255,255,255,.05);
+  color: white;
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.resume-preview-content {
+  flex: 1;
+  min-height: 0;
+  background: #202020;
+}
+
+.resume-preview-content iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+.resume-preview-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  padding: 14px 18px;
+
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.resume-download-button {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 17px;
+
+  border-radius: 999px;
+
+  background: #62d6c5;
+  color: #061018;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.resume-close-button {
+  padding: 10px 17px;
+
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 999px;
+
+  background: transparent;
+  color: #dce5e8;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+  .resume-preview-modal {
+    padding: 8px;
+  }
+
+  .resume-preview-box {
+    width: 100%;
+    height: 96vh;
+  }
+
+}
+
+</style>
+
+<script>
+
+function openResumePreview() {
+
+  const modal =
+    document.getElementById("resumePreviewModal");
+
+  modal.classList.add("active");
+
+  document.body.style.overflow = "hidden";
+}
+
+
+function closeResumePreview() {
+
+  const modal =
+    document.getElementById("resumePreviewModal");
+
+  modal.classList.remove("active");
+
+  document.body.style.overflow = "";
+}
+
+
+document
+  .getElementById("resumePreviewModal")
+  .addEventListener("click", function(event) {
+
+    if (event.target === this) {
+      closeResumePreview();
+    }
+
+  });
+
+
+document.addEventListener("keydown", function(event) {
+
+  if (event.key === "Escape") {
+    closeResumePreview();
+  }
+
+});
+
+</script>
+
+
 </html>
